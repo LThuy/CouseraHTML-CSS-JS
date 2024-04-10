@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.sushi-title {
+    background-color: #d3ca4f;
+}
+
+.sushi-title h2 {
+    color: #000000;
+}
+
+.chicken-title {
+    background-color: #da96c0;
+}
+
+.chicken-title h2 {
+    color: #000000;
+}
+
+.beef-title {
+    background-color: #d34f4f;
+}
+
+.beef-title h2 {
+    color: #ffffff;
+}
+
+section {
+    position: relative;
+    border: 2px solid black;
+    top: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #9e9e9e;
+    font-weight: bold;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    color: white; 
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+p {
+    margin-top: 60px;
+    text-align: justify;   
+}
+
+/* Desktop View (992px and above) */
+@media screen and (min-width: 992px) {
+    section {
+        width: calc(33.33% - 20px); 
+        float: left;
+    }
+}
+
+/* Tablet View (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: calc(50% - 20px); 
+        float: left;
+    }
+    section:nth-child(3) {
+        clear: both; 
+    }
+}
+
+/* Mobile View (Equal to or less than 767px) */
+@media screen and (max-width: 767px) {
+    section {
+        width: calc(100% - 20px); 
+        float: none;
+    }
+}
